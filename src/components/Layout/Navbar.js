@@ -50,7 +50,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a target="_blank" href="https://instagram.com/bihani.priya">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -68,19 +68,59 @@ const Navbar = () => {
               <svg dangerouslySetInnerHTML={{ __html: svg2 }} />
             </div>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                onClick={() => {
+                  const $body = $("body");
+                  $body.removeClass("menu-open");
+                }}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/getHelp">Get Help</NavLink>
+              <NavLink
+                onClick={() => {
+                  const $body = $("body");
+                  $body.removeClass("menu-open");
+                }}
+                to="/getHelp"
+              >
+                Get Help
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/helpOthers">Help Others</NavLink>
+              <NavLink
+                onClick={() => {
+                  const $body = $("body");
+                  $body.removeClass("menu-open");
+                }}
+                to="/helpOthers"
+              >
+                Help Others
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/track">Track</NavLink>
+              <NavLink
+                onClick={() => {
+                  const $body = $("body");
+                  $body.removeClass("menu-open");
+                }}
+                to="/track"
+              >
+                Track
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/5">Donate</NavLink>
+              <NavLink
+                onClick={() => {
+                  const $body = $("body");
+                  $body.removeClass("menu-open");
+                }}
+                to="/5"
+              >
+                Donate
+              </NavLink>
             </li>
           </ul>
         </nav>

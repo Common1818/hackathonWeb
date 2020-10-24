@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import $ from "jquery";
-import "./css/HealthCard.css";
 
-const HealthCard = ({ patients, num }) => {
+import $ from "jquery";
+
+const StudentCard = ({ students, num }) => {
   useEffect(() => {
     $(function () {
       // For card rotation
@@ -12,17 +12,16 @@ const HealthCard = ({ patients, num }) => {
       });
     });
   });
-
   return (
     <div className="row">
-      {patients &&
-        patients.map((info) => {
+      {students &&
+        students.map((info) => {
           const {
             name,
             city,
-            hospital,
-            needs,
-            bloodGroup,
+            school,
+            problem,
+            Class,
             description,
             phone,
             whatsapp,
@@ -41,7 +40,7 @@ const HealthCard = ({ patients, num }) => {
                       ></img>
                     </p>
                   </div>
-                  <div class="card-background"></div>
+                  <div class="card-background student"></div>
                   <div class="card-block">
                     <img
                       class="avatar"
@@ -58,7 +57,7 @@ const HealthCard = ({ patients, num }) => {
                               borderBottom: "2px solid red",
                             }}
                           >
-                            Needs : {needs}{" "}
+                            Problem : {problem}{" "}
                           </span>
                           <span>
                             <img
@@ -74,18 +73,18 @@ const HealthCard = ({ patients, num }) => {
                             {" "}
                             <img
                               width="20px"
-                              src="https://www.svgrepo.com/show/206349/location-hotel.svg"
+                              src="https://www.svgrepo.com/show/288206/school.svg"
                               alt=""
                             ></img>{" "}
-                            {hospital}
+                            {school}
                           </span>
                           <span>
                             <img
                               width="20px"
-                              src="https://www.svgrepo.com/show/163600/blood.svg"
+                              src="https://www.svgrepo.com/show/309431/class.svg"
                               alt=""
                             ></img>{" "}
-                            {bloodGroup}
+                            {Class}
                           </span>
                         </li>
                         <li class="flex"></li>
@@ -147,4 +146,4 @@ const HealthCard = ({ patients, num }) => {
   );
 };
 
-export default HealthCard;
+export default StudentCard;

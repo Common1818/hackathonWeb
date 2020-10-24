@@ -61,6 +61,13 @@
     background-size: cover;
 }
 
+.card .card-background.student {
+    background: url("../images/studentHelp.PNG");
+    height: 12em;
+    background-position: center center;
+    background-size: cover;
+}
+
 .card .avatar {
     max-width: 6em;
     max-height: 6em;

@@ -67,12 +67,13 @@ const AboutCovid = () => {
             <div class="stats-card__banner-content">
               <h1 class="covid-h1">About Covid-19</h1>
               <p class="stats-message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                et quas quo quod vel a, quos reprehenderit iusto dolores at
-                omnis voluptatum blanditiis? Deserunt numquam, soluta eum velit
-                sapiente delectus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Molestias ipsam aliquam quibusdam
-                exercitationem. Non, est?
+                Coronavirus disease (COVID-19) is an infectious disease caused
+                by a newly discovered coronavirus. Most people infected with the
+                COVID-19 virus will experience mild to moderate respiratory
+                illness and recover without requiring special treatment. Older
+                people, and those with underlying medical problems like
+                cardiovascular disease, diabetes, chronic respiratory disease,
+                and cancer are more likely to develop serious illness.
               </p>
 
               <a

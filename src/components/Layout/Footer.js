@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo3.PNG";
+import codersgala from "./codersgala.PNG";
 import "./css/Footer.css";
 
 const Footer = () => {
@@ -83,29 +84,57 @@ const Footer = () => {
           ></img>
         </a>
         <p class="text-secondary col-md-9 mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus
-          soluta veritatis sunt est veniam, rem neque impedit rerum aliquid iste
-          dolores laboriosam?
+          This Pandemic hasn't been easy, Support CovidWarriors and become one
+          by Helping the patients or students or both.
         </p>
         <hr class="my-5"></hr>
         <div class="mb-3">
-          <a href="/#" class="mx-1">
+          <a
+            target="_blank"
+            href="https://twitter.com/kartik18gint"
+            class="mx-1"
+          >
             <span dangerouslySetInnerHTML={{ __html: svg1 }} />
           </a>
           <a href="/#" class="w-6 mx-1">
             <span dangerouslySetInnerHTML={{ __html: svg2 }} />
           </a>
-          <a href="/#" class="w-6 mx-1">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCAbp9YDBP6xEPjgeVxbJ1QQ"
+            class="w-6 mx-1"
+          >
             <span dangerouslySetInnerHTML={{ __html: svg3 }} />
           </a>
-          <a href="/#" class="w-6 mx-1">
+          <a
+            href="https://linkedin.com/in/priya-bihani-81a5661b8/"
+            class="w-6 mx-1"
+          >
             <span dangerouslySetInnerHTML={{ __html: svg4 }} />
           </a>
-          <a href="/#" class="w-6 mx-1">
-            <span dangerouslySetInnerHTML={{ __html: svg5 }} />
-          </a>
         </div>
-        <p class="text-secondary">Copyright 2020. All rights reserved!</p>
+        <p class="text-secondary">
+          Copyright 2020. All rights reserved
+          <br />
+          Powered By{" "}
+          <a
+            style={{ color: "#32c7d3" }}
+            target="_blank"
+            href="https://codersgala.com"
+          >
+            CodersGala
+          </a>
+        </p>
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <a target="_blank" href="https://codersgala.com">
+          <img
+            width="150px"
+            src={codersgala}
+            style={{ borderRadius: "10px" }}
+            alt=""
+          />
+        </a>
       </div>
     </footer>
   );
