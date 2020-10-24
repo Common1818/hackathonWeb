@@ -1,0 +1,11 @@
+@media(max-width:600px) {
+    .content-wrapper {
+        width: 96% !important;
+        overflow-x: hidden !important;
+        padding: 5px !important;
+    }
+}
+
+.content-wrapper {
+    padding: 20px !important;
+}

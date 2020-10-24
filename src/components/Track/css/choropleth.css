@@ -1,0 +1,168 @@
+.full-width-height {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* .container {
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    padding: 16px;
+} */
+
+.no-margin {
+    margin: 0;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.fill {
+    flex: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.__react_component_tooltip {
+    /* text-align: center; */
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #111 !important;
+    color: #fff !important;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    background: #439cfb !important;
+    ;
+}
+
+.__react_component_tooltip .state_name {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+    /* background: #e0aaff !important; */
+    color: #f7f7ff !important;
+    margin: 5px;
+    font-weight: 600;
+    font-family: 'Carter One', sans-serif;
+    text-align: center !important;
+}
+
+.__react_component_tooltip .value {
+    color: #f7f7ff !important;
+    font-weight: 700;
+}
+
+.choropleth-map {
+    width: 500px;
+    height: 600px;
+    text-align: center !important;
+}
+
+.choropleth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    padding: 20px;
+}
+
+.info {
+    width: 900px;
+    text-align: center;
+    /* background: red; */
+    /* height: auto; */
+}
+
+
+/* @media(min-width:1300px) {
+    .choropleth-map {
+        width: 600px;
+        height: 800px;
+        float: right;
+    }
+} */
+
+.choropleth .container {
+    position: relative;
+}
+
+img.virus {
+    position: absolute;
+    width: 70px !important;
+    top: -50px;
+    left: -10px;
+}
+
+.pandemic {
+    font-size: 2.3rem;
+    margin: 10px;
+    font-family: "Carter One";
+    /* color: #5b52f8; */
+}
+
+.test section {
+    float: right;
+    color: grey;
+    font-weight: 500;
+}
+
+.tracker-img {
+    margin: 10px auto !important;
+    width: 80%;
+}
+
+.content-wrapper {
+    box-shadow: 0 12px 18px 2px rgba(34, 0, 51, .04), 0 6px 22px 4px rgba(7, 48, 114, .12), 0 6px 10px -4px rgba(14, 13, 26, .12);
+    margin-top: 50px !important;
+}
+
+
+/* svg curve */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+#textcontainer {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #999;
+    /* text-transform: ; */
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.typing-text {
+    color: crimson;
+    font-size: 1.8rem;
+    font-family: 'Carter One';
+    text-transform: uppercase;
+}
+
+@media(max-width:900px) {
+    .tracker-img {
+        margin: 10px auto !important;
+        width: 100%;
+        height: auto !important;
+    }
+    .choropleth {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        margin-top: 100px;
+        width: 80vw;
+    }
+    img.virus {
+        position: absolute;
+        width: 70px !important;
+        top: -50px;
+        left: -10px;
+    }
+}

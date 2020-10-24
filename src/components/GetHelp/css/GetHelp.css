@@ -1,0 +1,70 @@
+.get-help-container {
+    text-align: center !important;
+}
+
+.get-help-container .rotate-container {
+    max-width: 500px !important;
+}
+
+.get-help-container .rotate-container {
+    margin: 0px auto;
+    position: relative !important;
+    left: 40%;
+}
+
+.get-help-container form {
+    text-align: center;
+}
+
+.get-help-container input#name {
+    width: 250px !important;
+    border-radius: 30px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.get-help-container input#needs {
+    width: 100px !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.get-help-container input#city {
+    width: 100px !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.get-help-container input#bloodGroup {
+    width: 100px !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.get-help-container textarea {
+    border-radius: 10px;
+}
+
+.get-help-container input#whatsapp,
+input#phone {
+    width: 150px !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+input#instagram {
+    width: 100px !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    text-align: center
+}
+
+@media(max-width:768px) {
+    .get-help-container .rotate-container {
+        left: 0%;
+    }
+}

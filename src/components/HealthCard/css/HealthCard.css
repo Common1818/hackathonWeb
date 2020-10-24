@@ -1,0 +1,129 @@
+/* Card styles for rotation */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.rotate-container {
+    position: relative;
+}
+
+.rotate-container .card-front,
+.rotate-container .card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+.rotate-container .card-back {
+    -webkit-transform: perspective(1600px) rotateY(180deg);
+    transform: perspective(1600px) rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.rotate-container .rotate-card-front {
+    -webkit-transform: perspective(1600px) rotateY(-180deg);
+    transform: perspective(1600px) rotateY(-180deg);
+}
+
+.rotate-container .rotate-card-back {
+    -webkit-transform: perspective(1600px) rotateY(0deg);
+    transform: perspective(1600px) rotateY(0deg);
+}
+
+
+/* Modified card styles */
+
+.card {
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    /* margin: 20px; */
+}
+
+@media(max-width:600px) {
+    .card {
+        margin-top: 20px
+    }
+}
+
+.card .card-header p {
+    margin: 0;
+}
+
+.card .card-background {
+    background: url("../images/help4.PNG");
+    height: 12em;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card .avatar {
+    max-width: 6em;
+    max-height: 6em;
+    margin-top: -4em;
+    margin-bottom: 1em;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: radial-gradient(#e3e3e3, #329A7C, #109381);
+}
+
+.card .btn {
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.card .social-links li {
+    margin: 0.5em;
+}
+
+.card .social-links a {
+    font-size: 1.5em;
+}
+
+
+/* ------------------------------- CS Styles ------------------------------ */
+
+.card-header {
+    background-color: #fdfdfd !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.card {
+    /* box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ef233c; */
+    /* border-radius: 40px !important; */
+}
+
+.btn {
+    background: #f20c44 !important;
+    border: none !important;
+    font-family: "Roboto";
+}
+
+.needs {
+    text-align: center;
+}
+
+.needs .flex {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.card-block {
+    background: #fdfdfd;
+}
+
+ul {
+    padding: 0px !important;
+}
+
+ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
