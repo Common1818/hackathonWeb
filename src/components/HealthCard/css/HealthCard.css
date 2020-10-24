@@ -1,8 +1,18 @@
+/* lkasjdlflklasdf */
+
+
 /* Card styles for rotation */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .rotate-container {
     position: relative;
+}
+
+.card .card-background.student {
+    background: url("../images/studentHelp.PNG");
+    height: 12em;
+    background-position: center center;
+    background-size: cover;
 }
 
 .rotate-container .card-front,
@@ -48,6 +58,9 @@
     .card {
         margin-top: 20px
     }
+    .d-flex {
+        flex-direction: column;
+    }
 }
 
 .card .card-header p {
@@ -56,13 +69,6 @@
 
 .card .card-background {
     background: url("../images/help4.PNG");
-    height: 12em;
-    background-position: center center;
-    background-size: cover;
-}
-
-.card .card-background.student {
-    background: url("../images/studentHelp.PNG");
     height: 12em;
     background-position: center center;
     background-size: cover;

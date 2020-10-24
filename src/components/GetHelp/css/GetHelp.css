@@ -23,6 +23,20 @@
     text-align: center;
 }
 
+.get-help-container input#Class {
+    width: 100px !important;
+    border-radius: 30px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+.get-help-container input#problem {
+    width: 100px !important;
+    border-radius: 30px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
 .get-help-container input#needs {
     width: 100px !important;
     border-radius: 10px;
@@ -48,6 +62,69 @@
     border-radius: 10px;
 }
 
+.bannertext {
+    /* background: #f1f1f1; */
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    border-top: 2px solid crimson;
+    /* width: 100vw !important; */
+}
+
+.bannertext h1 {
+    font-family: Carter One;
+}
+
+.bannertext h2 {
+    color: #5253e9;
+}
+
+.bannertext::after {
+    content: "?";
+    font-size: 12rem;
+    color: crimson;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.9;
+    top: -60px;
+    right: 30%;
+}
+
+@media(max-width:1000px) {
+    .bannertext::after {
+        right: 20%;
+    }
+}
+
+@media(max-width:700px) {
+    .bannertext::after {
+        right: 10%;
+    }
+}
+
+@media(max-width:550px) {
+    .bannertext::after {
+        right: -10%;
+    }
+    .bannertext {
+        /* background: #f1f1f1; */
+        margin: 20px;
+        padding: 20px;
+        position: relative;
+        border-top: 2px solid crimson;
+        /* width: 100vw !important; */
+    }
+}
+
+.get-help-container img.help {
+    position: absolute;
+    width: 400px;
+    top: 70%;
+    transform: rotate(-20deg);
+    left: 50px;
+    transition: 1s ease;
+}
+
 .get-help-container input#whatsapp,
 input#phone {
     width: 150px !important;
@@ -66,5 +143,18 @@ input#instagram {
 @media(max-width:768px) {
     .get-help-container .rotate-container {
         left: 0%;
+    }
+    .get-help-container img.help {
+        position: relative;
+        width: 70%;
+        margin: 10px auto;
+        transform: rotate(0deg);
+        left: 10px;
+    }
+    .contact-details {
+        flex-direction: column;
+    }
+    .get-help-container form {
+        padding: 10px;
     }
 }

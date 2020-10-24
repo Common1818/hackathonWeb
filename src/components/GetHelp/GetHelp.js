@@ -33,6 +33,10 @@ const GetHelp = ({ addPatient }) => {
 
   return (
     <div className="get-help-container">
+      <div className="bannertext">
+        <h1>Need Help</h1>{" "}
+        <h2>Enter your details and directly get Help from the Community</h2>
+      </div>
       <Toggle help={help} setHelp={setHelp} />
       <form onSubmit={handleSubmit}>
         {help == "patient" ? (
