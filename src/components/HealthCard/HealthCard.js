@@ -5,13 +5,9 @@ import "./css/HealthCard.css";
 const HealthCard = ({ patients, num }) => {
   useEffect(() => {
     $(function () {
-      // For card rotation
-      $(".btn-rotate").click(function () {
-        $(".card-front").toggleClass(" rotate-card-front");
-        $(".card-back").toggleClass(" rotate-card-back");
-      });
+      $(".btn-rotate").click(function () {});
     });
-  });
+  }, []);
 
   return (
     <div className="row">
@@ -92,7 +88,10 @@ const HealthCard = ({ patients, num }) => {
                       </ul>
                     </div>
                     <button
-                      onClick={() => {}}
+                      onClick={() => {
+                        $(".card-front").toggleClass(" rotate-card-front");
+                        $(".card-back").toggleClass(" rotate-card-back");
+                      }}
                       class="btn btn-primary btn-rotate"
                     >
                       Details &nbsp; <i class="fa fa-long-arrow-right"></i>
@@ -138,7 +137,13 @@ const HealthCard = ({ patients, num }) => {
                         </a>
                       </li>
                     </ul>
-                    <button class="btn btn-primary btn-rotate">
+                    <button
+                      onClick={() => {
+                        $(".card-front").toggleClass(" rotate-card-front");
+                        $(".card-back").toggleClass(" rotate-card-back");
+                      }}
+                      class="btn btn-primary btn-rotate"
+                    >
                       {" "}
                       <i class="fa fa-long-arrow-left"> </i>&nbsp; Back{" "}
                     </button>

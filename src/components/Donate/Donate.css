@@ -1,0 +1,10 @@
+.donate-container {
+    margin-top: 100px;
+}
+
+.donate-container button {
+    color: #fdfdfd !important;
+    font-weight: 400;
+    padding: 10px;
+    margin: 50px;
+}

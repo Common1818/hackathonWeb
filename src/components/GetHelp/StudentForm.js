@@ -16,13 +16,18 @@ const StudentForm = ({ handleChange, handleFile, setType }) => {
           </div>
           <div class="card-background student"></div>
           <div class="card-block">
-          <label htmlFor="file-upload">
-              <input id="file-upload" type='file' onChange={handleFile} style={{visibility:"hidden"}}/>
-            <img
-              class="avatar"
-              src="https://www.svgrepo.com/show/52761/image.svg"
-              alt="Avatar"
-            />
+            <label htmlFor="file-upload">
+              <input
+                id="file-upload"
+                type="file"
+                onChange={handleFile}
+                style={{ visibility: "hidden" }}
+              />
+              <img
+                class="avatar"
+                src="https://www.svgrepo.com/show/52761/image.svg"
+                alt="Avatar"
+              />
             </label>
             <h3 class="card-title">
               <input
@@ -73,9 +78,9 @@ const StudentForm = ({ handleChange, handleFile, setType }) => {
                     ></img>{" "}
                     <textarea
                       placeholder="Enter School's name and address"
-                      onChange={()=> {
-                        setType("students")
-                        handleChange()
+                      onChange={() => {
+                        setType("students");
+                        handleChange();
                       }}
                       id="school"
                       cols="20"

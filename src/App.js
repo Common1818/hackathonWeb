@@ -13,6 +13,7 @@ import Track from "./components/Track/Track";
 import GetHelp from "./components/GetHelp/GetHelp";
 import HelpOthers from "./components/Help/HelpOthers";
 import Footer from "./components/Layout/Footer";
+import Donate from "./components/Donate/Dontate";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route exact path="/track" component={Track} />
         <Route exact path="/getHelp" component={GetHelp} />
         <Route exact path="/helpOthers" component={HelpOthers} />
+        <Route exact path="/donate" component={Donate} />
       </Switch>
       <Footer />
     </div>

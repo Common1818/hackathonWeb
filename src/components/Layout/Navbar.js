@@ -117,7 +117,7 @@ const Navbar = () => {
                   const $body = $("body");
                   $body.removeClass("menu-open");
                 }}
-                to="/5"
+                to="/donate"
               >
                 Donate
               </NavLink>
