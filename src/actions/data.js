@@ -34,9 +34,9 @@ export const getNewsData = () => async (dispatch) => {
   });
 };
 
-export const addPatient = (patient) => async (dispatch) => {
-  dispatch({
-    type: "ADD_PATIENT",
-    payload: patient,
-  });
-};
+// export const addPatient = (patient) => async (dispatch) => {
+//   dispatch({
+//     type: "ADD_PATIENT",
+//     payload: patient,
+//   });
+// };

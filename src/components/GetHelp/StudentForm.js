@@ -1,6 +1,6 @@
 import React from "react";
 
-const StudentForm = ({ handleChange }) => {
+const StudentForm = ({ handleChange, handleFile, setType }) => {
   return (
     <div className={`col-md-7`}>
       <div class="rotate-container" style={{ marginTop: "20px" }}>
@@ -16,11 +16,14 @@ const StudentForm = ({ handleChange }) => {
           </div>
           <div class="card-background student"></div>
           <div class="card-block">
+          <label htmlFor="file-upload">
+              <input id="file-upload" type='file' onChange={handleFile} style={{visibility:"hidden"}}/>
             <img
               class="avatar"
               src="https://www.svgrepo.com/show/52761/image.svg"
               alt="Avatar"
             />
+            </label>
             <h3 class="card-title">
               <input
                 onChange={handleChange}
@@ -70,10 +73,14 @@ const StudentForm = ({ handleChange }) => {
                     ></img>{" "}
                     <textarea
                       placeholder="Enter School's name and address"
-                      onChange={handleChange}
+                      onChange={()=> {
+                        setType("students")
+                        handleChange()
+                      }}
                       id="school"
                       cols="20"
                       rows="3"
+                      required
                     ></textarea>
                   </span>
                   <span>
@@ -109,7 +116,7 @@ const StudentForm = ({ handleChange }) => {
             </p>
           </div>
           <div class="card-block">
-            <h4>Patient Details</h4>
+            <h4>Student Details</h4>
             <p>
               <textarea
                 placeholder="Enter Detailed description here"

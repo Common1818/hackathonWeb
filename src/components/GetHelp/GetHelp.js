@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import Toggle from "../Help/Toggle";
-import { addPatient } from "../../actions/data";
+import { addHelpList } from "../../actions/helpMeList";
 import "./css/GetHelp.css";
 import $ from "jquery";
 import PatientForm from "./PatientForm";
 import StudentForm from "./StudentForm";
 
-const GetHelp = ({ addPatient }) => {
+const GetHelp = ({ addHelpList }) => {
   const [help, setHelp] = useState("patient");
   useEffect(() => {
     $(function () {
@@ -20,16 +20,25 @@ const GetHelp = ({ addPatient }) => {
   });
 
   const [patientData, setPatientData] = useState({});
+  const [type, setType] = useState("patient");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(patientData);
-    addPatient(patientData);
+    console.log({...patientData, type})
+    addHelpList({...patientData, type});
   };
 
   const handleChange = (e) => {
     setPatientData({ ...patientData, [e.target.id]: e.target.value });
   };
+
+  const handleFile = async (e) => {
+    var FR = new FileReader();
+    FR.addEventListener("load",  async function(event){
+      setPatientData({ ...patientData, image:event.target.result });
+  })
+    await FR.readAsDataURL( e.target.files[0]);
+  }
 
   return (
     <div className="get-help-container">
@@ -40,9 +49,11 @@ const GetHelp = ({ addPatient }) => {
       <Toggle help={help} setHelp={setHelp} />
       <form onSubmit={handleSubmit}>
         {help == "patient" ? (
-          <PatientForm handleChange={handleChange} />
+          <PatientForm handleChange={handleChange} handleFile={handleFile} 
+          setType={setType}/>
         ) : (
-          <StudentForm handleChange={handleChange} />
+          <StudentForm handleChange={handleChange} handleFile={handleFile}
+          setType={setType} />
         )}
 
         <button
@@ -57,4 +68,4 @@ const GetHelp = ({ addPatient }) => {
   );
 };
 
-export default connect(null, { addPatient })(GetHelp);
+export default connect(null, { addHelpList })(GetHelp);

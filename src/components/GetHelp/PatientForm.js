@@ -1,26 +1,29 @@
 import React from "react";
 
-const PatientForm = ({ handleChange }) => {
+const PatientForm = ({ handleChange, handleFile, setType }) => {
   return (
     <div className={`col-md-7`}>
       <div class="rotate-container" style={{ marginTop: "20px" }}>
         <div class="card card-front text-center">
-          <div class="card-header">
+          <div class="card-header" >
             <p>
               <img
                 style={{ width: "20px" }}
                 src="https://www.svgrepo.com/show/7071/hospital.svg"
                 alt=""
-              ></img>
+              />
             </p>
           </div>
           <div class="card-background"></div>
           <div class="card-block">
+          <label htmlFor="file-upload">
+              <input id="file-upload" type='file' onChange={handleFile} style={{visibility:"hidden"}}/>
             <img
               class="avatar"
               src="https://www.svgrepo.com/show/52761/image.svg"
               alt="Avatar"
             />
+            </label>
             <h3 class="card-title">
               <input
                 onChange={handleChange}
@@ -40,7 +43,10 @@ const PatientForm = ({ handleChange }) => {
                   >
                     Needs :{" "}
                     <input
-                      onChange={handleChange}
+                      onChange={(e)=> {
+                        setType("patients")
+                        handleChange(e)
+                      }}
                       placeholder="Plasma/Blood etc."
                       type="text"
                       id="needs"
