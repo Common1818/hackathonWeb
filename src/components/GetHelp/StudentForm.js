@@ -141,6 +141,15 @@ const StudentForm = ({ handleChange }) => {
               </li>
               <li>
                 <input
+                  placeholder="email"
+                  required
+                  type="email"
+                  onChange={handleChange}
+                  id="email"
+                />
+              </li>
+              <li>
+                <input
                   placeholder="instagram Username"
                   type="text"
                   onChange={handleChange}

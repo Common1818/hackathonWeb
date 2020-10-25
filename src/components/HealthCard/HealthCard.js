@@ -125,6 +125,11 @@ const HealthCard = ({ patients, num }) => {
                         </a>
                       </li>
                       <li>
+                        <a target="_blank">
+                          <i class="fa fa-envelope"></i>
+                        </a>
+                      </li>
+                      <li>
                         <a
                           href={`https://instagram.com/` + instagram}
                           target="_blank"

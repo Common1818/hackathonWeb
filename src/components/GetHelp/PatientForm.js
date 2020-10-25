@@ -120,7 +120,7 @@ const PatientForm = ({ handleChange }) => {
               ></textarea>
             </p>
             <h4>Contact</h4>
-            <ul class="social-links list-unstyled d-flex justify-content-center">
+            <ul class="social-links list-unstyled d-flex justify-content-center contact-details">
               <li>
                 <input
                   placeholder="WhatsApp Number"
@@ -137,6 +137,15 @@ const PatientForm = ({ handleChange }) => {
                   type="text"
                   onChange={handleChange}
                   id="phone"
+                />
+              </li>
+              <li>
+                <input
+                  placeholder="email"
+                  required
+                  type="email"
+                  onChange={handleChange}
+                  id="email"
                 />
               </li>
               <li>

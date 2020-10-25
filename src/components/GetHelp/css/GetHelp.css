@@ -126,7 +126,8 @@
 }
 
 .get-help-container input#whatsapp,
-input#phone {
+input#phone,
+input#email {
     width: 150px !important;
     border-radius: 10px;
     padding: 3px 10px 3px 10px;
@@ -140,6 +141,10 @@ input#instagram {
     text-align: center
 }
 
+.contact-details {
+    flex-direction: column !important;
+}
+
 @media(max-width:768px) {
     .get-help-container .rotate-container {
         left: 0%;
@@ -150,9 +155,6 @@ input#instagram {
         margin: 10px auto;
         transform: rotate(0deg);
         left: 10px;
-    }
-    .contact-details {
-        flex-direction: column;
     }
     .get-help-container form {
         padding: 10px;
